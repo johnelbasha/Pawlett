@@ -1,0 +1,17 @@
+<h1>Page showing all the services</h1>
+
+<div class="container">
+  <div class="row">
+    <% @services.each do |service|%>
+      <div class="col-6 col-md-4">
+        <div class="card">
+          <%= image_tag service.photo_url , class: "card-img-top" %>
+          <div class="card-body">
+            <h5 class="card-title"><%= service.name %></h5>
+            <%#= link_to "More details", teddy_path(teddy), class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
