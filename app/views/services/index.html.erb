@@ -9,7 +9,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= service.name %></h5>
             <p>Amount: <%= humanized_money_with_symbol(service.price) %></p>
-            <%#= link_to "More details", teddy_path(teddy), class: "btn btn-primary" %>
+            <%= link_to "More details", service_path(service), class: "btn btn-primary" %>
           </div>
         </div>
       </div>
