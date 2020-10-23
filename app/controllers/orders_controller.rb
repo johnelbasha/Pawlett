@@ -21,4 +21,7 @@ class OrdersController < ApplicationController
     redirect_to new_order_payment_path(order)
   end
 
+  def show
+    @order = current_user.orders.find(params[:id])
+  end
 end
