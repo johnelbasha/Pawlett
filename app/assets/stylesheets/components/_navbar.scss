@@ -1,7 +1,26 @@
+.navbar-pawlett-wrapper {
+  background-color: $dark-grey;
+}
+
+
 .navbar-pawlett {
   background-color: $dark-grey;
-  height: 189px;
-  li {
-    text-transform: uppercase;
+  max-width: 900px;
+
+  .navbar-pawlett-central-links {
+    margin-top: 43px;
+    margin-right: 100px;
   }
+
+  .pawlett-navbar-button {
+
+    background-color: $dark-grey;
+    padding: 6px 12px;
+    font-size: 1.8rem;
+  }
+
+  .pawlett-navbar-login {
+    margin-top: 43px;
+  }
+
 }
