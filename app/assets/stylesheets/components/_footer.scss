@@ -1,0 +1,36 @@
+.pawlett-footer-wrapper {
+  background-color: rgb(60, 60, 60);
+  color: $light-grey;
+
+  .pawlett-footer {
+    height: 112px;
+    width: 900px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgb(60, 60, 60);
+      border: none;
+      text-transform: capitalize;
+      font-weight: 100;
+    }
+
+    p {
+      font-weight: 100;
+      margin-bottom: 0;
+      margin-left: 110px;
+    }
+
+    span {
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+  }
+
+}
+
+
+
