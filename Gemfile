@@ -24,6 +24,7 @@ gem 'redis', '~> 4.0'
 gem 'money-rails'
 gem 'stripe'
 gem 'stripe_event'
+gem 'faker'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
