@@ -6,3 +6,20 @@
 .services-group-wrapper {
   background-color: black;
 }
+
+.book-services-registration {
+  width: 900px;
+
+  h1 {
+    display: inline;
+
+  }
+
+  .registration-form {
+    display: inline;
+
+    input {
+      height: 40px;
+    }
+  }
+}
