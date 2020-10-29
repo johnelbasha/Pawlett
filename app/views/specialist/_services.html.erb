@@ -13,8 +13,8 @@
       </div>
     </div>
     <div class="book-services-online">
-      <div class="container">
-        <div class="row">
+      <div class="container d-flex justify-content-center">
+        <div class="row" style="width: 900px">
           <% @services.each do |service| %>
             <% if service.bookable == true %>
               <div class="col-6">
@@ -39,73 +39,51 @@
         <h1>Contact us for other services</h1>
       </div>
     </div>
-
-
-    <div class="arranged-services">
+<!--     <div class="arranged-services">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <h2>Annual Boiler Services</h2>
-              <p>Keep your boiler running well</p>
-            </div>
-          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="book-services-online">
+      <div class="container d-flex justify-content-center">
+        <div class="row" style="width: 900px">
+          <% @services.each do |service| %>
+            <% if service.bookable == false %>
+              <div class="col-6">
+                <div class="card mb-5" style="width: 25rem;">
+                  <%= image_tag service.photo_url, alt: "Card image cap", width: 380, height: 240, :class => "card-img-top" %>
+                  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                  <div class="card-body">
+                    <h5 class="card-title"><%= service.name %></h5>
+                    <p class="card-text"><%= service.description %></p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 </div>
