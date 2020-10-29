@@ -1,13 +1,20 @@
 .services-group {
   width: 1440px;
   background-color: $lighter-grey;
+
+  hr {
+    color: $flame-red;
+    height: 2px;
+    margin-top: 38px;
+  }
+
 }
 
 .services-group-wrapper {
   background-color: black;
 }
 
-.book-services-registration {
+.book-services-registration, .services-byarrangement {
   width: 900px;
 
   h1 {
@@ -20,6 +27,8 @@
 
     input {
       height: 40px;
+
     }
   }
 }
+
