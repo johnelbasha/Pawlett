@@ -10,7 +10,7 @@
           <div class="row contacts-row" style="width: 900px">
             <div class="col-8">
               <div class="contact-form">
-                <div class="container d-flex justify-content-between">
+                <div class="container d-flex justify-content-between mb-3">
                   <input class="input-name" type="text" placeholder="your name">
                   <input class="input-email" type="text" placeholder="your e-mail">
                 </div>
@@ -23,10 +23,38 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="contact-details">
-                <p>telephone</p>
-                <p>email</p>
-                <p>postal address</p>
+              <div class="contact-details border px-3">
+                <div class="telephone-group container d-flex justify-content-around mt-3">
+                  <i class="fas fa-phone icon"></i>
+                  <div class="phone-numers">
+                    <p>Tel: 01330-828196</p>
+                    <p>Mob: 07-82587008</p>
+                  </div>
+                </div>
+                <div class="email-group container d-flex justify-content-around mt-3">
+                  <i class="fas fa-at icon"></i>
+                  <div class="email">
+                    <p>1 The Beeches,</p>
+                    <p>Banchory Lodge,</p>
+                    <p>Banchory, AB31 5HS</p>
+                  </div>
+                </div>
+                <div class="address-group container d-flex justify-content-around mt-3">
+                  <i class="fas fa-map-marker-alt icon"></i>
+                  <div class="address">
+                    <p>1 The Beeches,</p>
+                    <p>Banchory Lodge,</p>
+                    <p>Banchory, AB31 5HS</p>
+                  </div>
+                </div>
+                <div class="icons-group container d-flex justify-content-around my-3">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="accred-group container d-flex justify-content-center my-3">
+                  <%= image_tag 'gas-safe-register.jpg', width: 64 %>
+                </div>
               </div>
             </div>
           </div>

@@ -26,7 +26,7 @@
 
 .filter {
   background-color: rgba(0, 0, 0, .52);
-  height: 863px;
+  height: 566px;
 }
 
 
@@ -36,7 +36,7 @@
   background-color: rgba(0, 0, 0, .51);
   height: 40px;
   padding: 20px;
-  border: none;
+  border: 1px solid $lighter-grey;
 }
 
 .input-email {
@@ -45,7 +45,7 @@
   color: rgb(166, 166, 166);
   padding: 20px;
   background-color: rgba(0, 0, 0, .51);
-  border: none;
+  border: 1px solid $lighter-grey;
 }
 
 .input-message {
@@ -66,5 +66,33 @@
   border: 1px solid $lighter-grey;
   padding-left: 20px;
   color: rgb(166, 166, 166);
+}
+
+.contact-details {
+    background-color: rgba(0, 0, 0, .51);
+    color: $space-grey;
+
+    p {
+      font-size: 0.75rem;
+    }
+
+}
+
+.phone-numers, .address, .email {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+    padding-top: 8px;
+  }
+
+.phone-numers {
+  margin-right: 10px;
+}
+
+.icons-group {
+  font-size: 1.3rem;
 }
 
