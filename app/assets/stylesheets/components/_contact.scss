@@ -1,0 +1,35 @@
+.contact-group {
+  width: 1440px;
+  background-color: $lighter-grey;
+}
+
+.contact-group-header  {
+  width: 900px;
+  background-color: $lighter-grey;
+}
+
+
+.contact-background {
+  background-image: image-url("van.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 863px;
+  width: 1440px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-group-wrapper {
+  background-color: black;
+}
+
+
+.contacts-row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, .52);
+  height: 863px;
+}
