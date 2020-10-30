@@ -12,3 +12,14 @@
     height: 40px;
     margin-bottom: 8px;
 }
+
+
+.btn-submit-dark {
+  background-color: $flame-red;
+  opacity: 0.8;
+  border: none;
+  color: $dark-grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 16px;
+}
