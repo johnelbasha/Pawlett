@@ -28,6 +28,17 @@ RSpec.describe Query, type: :model do
       expect(query.errors.messages[:name][0]).to eq("only allows letters from the alphabet a-z and spaces")
     end
 
+    it 'ensures the email has been provided' do
+      properties = {name: "John", message: "hello" }
+      query = Query.new(properties).save
+      expect(query).to eq(false)
+    end
+
+    it 'ensures the email provided is a valid format' do
+      # properties = {name: "John", message: "hello" }
+      # query = Query.new(properties).save
+      # expect(query).to eq(false)
+    end
 
   end
 
