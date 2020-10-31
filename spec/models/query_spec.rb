@@ -13,8 +13,21 @@ RSpec.describe Query, type: :model do
       properties = {email: "john@gmail.com", message: "hello" }
       query = Query.new(properties).save
       expect(query).to eq(false)
-
     end
+
+    it 'should a reject a name made up only of invalid characters' do
+      properties = {name: "%$£", email: "john@gmail.com", message: "hello" }
+      query = Query.new(properties).save
+      expect(query).to eq(false)
+    end
+
+    it 'when rejecting a name due to format, it should provide an error message description' do
+      properties = {name: "%$£", email: "john@gmail.com", message: "hello" }
+      query = Query.new(properties)
+      query.save
+      expect(query.errors.messages[:name][0]).to eq("only allows letters from the alphabet a-z and spaces")
+    end
+
 
   end
 
