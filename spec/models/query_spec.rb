@@ -34,10 +34,30 @@ RSpec.describe Query, type: :model do
       expect(query).to eq(false)
     end
 
-    it 'ensures the email provided is a valid format' do
-      # properties = {name: "John", message: "hello" }
-      # query = Query.new(properties).save
-      # expect(query).to eq(false)
+    it 'rejects the email provided if it is an invalid format' do
+      properties = {name: "John", email: "johngmail.com", message: "hello" }
+      query = Query.new(properties).save
+      expect(query).to eq(false)
+    end
+
+    it 'rejects the query if a message has not been provided' do
+      properties = {name: "John", email: "johng@mail.com"}
+      query = Query.new(properties).save
+      expect(query).to eq(false)
+    end
+
+    it 'rejects the query if a message is less than 15 characters' do
+      properties = {name: "John", email: "johng@mail.com", message: "Hello, how?"}
+      query = Query.new(properties).save
+      expect(query).to eq(false)
+    end
+
+
+    it 'provides an explanatory error when users submit a message with less than 15 characters' do
+      properties = {name: "John", email: "johng@mail.com", message: "Hello, how?"}
+      query = Query.new(properties)
+      query.save
+      expect(query.errors.messages[:message][0]).to eq("Your message needs to be at least 15 characters long.")
     end
 
   end
