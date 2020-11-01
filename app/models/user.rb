@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
   has_many :orders
 
+  def send_welcome_email
+    UserMailer.welcome_email(self).deliver_now
+  end
+
 end
