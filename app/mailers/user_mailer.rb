@@ -7,7 +7,6 @@ class UserMailer < ApplicationMailer
   #
   def welcome
     @user = User.first
-
     mail to: @user.email, subject: 'Welcome to Pawlett'
   end
 end
