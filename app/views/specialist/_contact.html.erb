@@ -10,8 +10,27 @@
         <div class="container d-flex justify-content-center">
           <div class="row contacts-row" style="width: 1100px">
             <div class="col-8">
-              <div class="contact-form">
-                <div class="container d-flex justify-content-between mb-3">
+              <div class="contact-form" style="color: white;">
+                <%= simple_form_for(@query) do |f| %>
+                  <%= f.input :name %>
+                  <%= f.input :email %>
+                  <%= f.input :message %>
+                  <%= f.submit %>
+                <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--              <div class="container d-flex justify-content-between mb-3">
                   <input class="input-name" type="text" placeholder="your name">
                   <input class="input-email" type="text" placeholder="your e-mail">
                 </div>
@@ -20,7 +39,7 @@
                 </div>
                 <div class="container d-flex justify-content-end mt-3">
                   <button class="btn-submit-dark">Submit</button>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-4">
