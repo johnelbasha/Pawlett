@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
     @services = Service.all
+    @query = Query.new
   end
 end
