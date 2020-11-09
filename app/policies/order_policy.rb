@@ -5,7 +5,14 @@ class OrderPolicy < ApplicationPolicy
     end
   end
 
-  def create? #pundit scope or authentication scope??
-    true      #pundit scope or authentication scope??
-  end         #pundit scope or authentication scope??
+  def create?
+    true
+  end
+
+
+  def show?
+    record.user == user
+  end
+
+
 end
