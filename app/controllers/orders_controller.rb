@@ -3,6 +3,7 @@ class OrdersController < ApplicationController
   def create
     service = Service.find(params[:service_id])
     order  = Order.create!(service: service, service_name: service.name, amount: service.price, state: 'pending', user: current_user)
+    authorize order
 
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
