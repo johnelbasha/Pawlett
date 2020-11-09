@@ -1,16 +1,31 @@
-<div class="container py-3">
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <%= image_tag(@service.photo_url, width: '100%') %>
+
+<%= render 'shared/orderprocess' %>
+
+<div class="container service-description-box mt-5">
+  <div class="">
+    <div><h1 class="text-center mt-4 mb-3">Annual Boiler Service</h1></div>
+    <div class="d-flex justify-content-center"><%= image_tag(@service.photo_url, width: '50%', :class => "rounded") %></div>
+    <div><h2 class="mt-5">What's included?</h2></div>
+    <div class="mb-5">
+      <ul>
+        <li>we'll visit you at the time agreed</li>
+        <li>we'll visit you at the time agreed</li>
+        <li>we'll visit you at the time agreed</li>
+        <li>we'll visit you at the time agreed</li>
+        <li>we'll visit you at the time agreed</li>
+      </ul>
     </div>
-    <div class="col-sm-12 col-md-6">
-      <h1><%= @service.name %></h1>
-      <p>Some awesome description of our amazing service.</p>
-      <p>Amount: <%= humanized_money_with_symbol(@service.price) %></p>
-        <%= form_tag orders_path do %>
+    <div class="d-flex justify-content-center"><p class="price"><%= humanized_money_with_symbol(@service.price) %></p></div>
+  </div>
+
+</div>
+<div class="container service-buttons-box mt-3 mb-5">
+  <div class="d-flex justify-content-center">
+    <%= link_to 'Back', root_path, :class => "mr-4 button-back" %>
+    <%= form_tag orders_path do %>
           <%= hidden_field_tag 'service_id', @service.id %>
-          <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+          <%= submit_tag 'Book', class: 'mr-4 button-forward' %>
       <% end %>
-    </div>
   </div>
 </div>
+
