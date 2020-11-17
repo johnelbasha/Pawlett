@@ -5,6 +5,19 @@
     text-transform: uppercase;
   }
 
+  .btn-dark-register {
+    background-color: $dark-grey;
+    padding: 15px 25px;
+    margin-right: 140px;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+      &:hover {
+        color: $flame-red;
+        text-decoration: none;
+      }
+  }
+
 .input-light {
     background-color: white;
     font-size: 1.3rem;

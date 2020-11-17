@@ -4,11 +4,7 @@
       <div class="book-services-registration d-flex justify-content-between align-items-center">
         <h1>Book services online</h1>
         <div class="registration-form">
-          <form class="form-inline">
-            <label class="sr-only" for="inlineFormInputName2">email</label>
-            <input type="text" class="form-control input-light " id="inlineFormInputName2" placeholder="email">
-            <%= link_to "Register", new_user_registration_path, :class => "btn-dark mb-2" %>
-          </form>
+          <%= link_to "Register", new_user_registration_path, :class => "btn-dark-register mb-2" %>
         </div>
       </div>
     </div>
@@ -17,7 +13,7 @@
         <div class="row" style="width: 1100px">
           <% @services.each do |service| %>
             <% if service.bookable == true %>
-              <div class="col-6">
+              <div class="col-6 d-flex justify-content-center">
                 <div class="card" style="width: 25rem;">
                   <%= image_tag service.photo_url, alt: "Card image cap", width: 380, height: 240, :class => "card-img-top" %>
                   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
