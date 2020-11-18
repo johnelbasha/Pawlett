@@ -7,7 +7,7 @@ body {
 }
 
 .form-inputs {
-  margin: 100px auto;
+  margin: 30px auto;
   width: 800px;
 
 
@@ -28,11 +28,20 @@ body {
 
 #lookUp {
   position: absolute;
-  top: 920px;
+  top: 850px;
   left: 600px;
   padding: 5px 15px;
 }
 
 #user_postal_code {
   width: 300px;
+}
+
+
+.log-in-prompt {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(224, 79, 79);
+  margin-left: 8px;
 }
