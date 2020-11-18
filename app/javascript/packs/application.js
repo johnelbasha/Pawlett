@@ -22,7 +22,6 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
-console.log("Hello from application.js file")
 
 
 
@@ -31,11 +30,13 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import { initAddressLookup }  from "../plugins/init_address_lookup.js";
+// import { initAddressLookup }  from "../plugins/init_address_lookup.js";
 
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  initAddressLookup();
+  // initAddressLookup();
 });
+
+import "controllers"
