@@ -8,6 +8,8 @@ class User < ApplicationRecord
 
   has_many :orders
 
+  ADDRESSES = []
+
 
   private
 

@@ -1,10 +1,14 @@
-<div class="container" style="background-color: white;">
-  <h2>Sign up</h2>
+<div class="container sign-up-container" style="background-color: white;">
+  <h1 class="mt-5 text-center">Sign up</h1>
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs">
+      <div class="container d-flex justify-content-center">
+        <%= image_tag "Pawlett-Logo2", alt: "", width: 300, id: "logo-registration" %>
+      </div>
+
       <%= f.input :email,
                   required: true,
                   autofocus: true,
@@ -16,12 +20,13 @@
       <%= f.input :last_name,
                   required: true,
                   autofocus: true %>
-      <%= f.input :house_name_or_number,
-                  required: true,
-                  autofocus: true %>
       <%= f.input :postal_code,
                   required: true,
                   autofocus: true %>
+      <%= f.input :house_name_or_number,
+                  required: true,
+                  autofocus: true,
+                  collection: User::ADDRESSES %>
       <%= f.input :password,
                   required: true,
                   hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
@@ -31,11 +36,10 @@
                   input_html: { autocomplete: "new-password" } %>
     </div>
 
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up" %>
+    <div class="form-actions d-flex justify-content-center">
+      <%= f.button :submit, "Sign up", id: "submit_button", class: "button-forward" %>
     </div>
   <% end %>
-
   <%= render "devise/shared/links" %>
-
+  <button id="lookUp">Look-up</button>
 </div>
