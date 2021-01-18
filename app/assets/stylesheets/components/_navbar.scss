@@ -1,38 +1,44 @@
-.navbar-pawlett-wrapper {
-  background-color: $dark-grey;
-  width: 1440px;
-}
+// .navbar-pawlett-wrapper {
+//   background-color: $dark-grey;
+//   width: 1440px;
+// }
+
+// .navbar-pawlett {
+//   background-color: $dark-grey;
+//   max-width: 1100px;
+//   text-transform: uppercase;
+//   font-weight: bold;
+
+//   a {
+
+//     &:hover {
+//     color: $flame-red;
+//     text-decoration: none;
+//   }
+//   }
+
+//   .navbar-pawlett-central-links {
+//     margin-top: 68px;
+//     margin-right: 50px;
+//   }
+
+//   .pawlett-navbar-button {
+
+//     background-color: $dark-grey;
+//     padding: 6px 12px;
+//     font-size: 1.8rem;
+//   }
+
+//   .pawlett-navbar-contact {
+//     margin-top: 68px;
+//     opacity: 0.6;
+//   }
+
+// }
 
 
-.navbar-pawlett {
-  background-color: $dark-grey;
-  max-width: 1100px;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  a {
-
-    &:hover {
-    color: $flame-red;
-    text-decoration: none;
-  }
-  }
-
-  .navbar-pawlett-central-links {
-    margin-top: 68px;
-    margin-right: 50px;
-  }
-
-  .pawlett-navbar-button {
-
-    background-color: $dark-grey;
-    padding: 6px 12px;
-    font-size: 1.8rem;
-  }
-
-  .pawlett-navbar-login {
-    margin-top: 68px;
-    opacity: 0.6;
-  }
-
-}
+// @media(max-width: 1400px) {
+//   .navbar-pawlett-wrapper {
+//     width: 1200px;
+//   }
+// }
