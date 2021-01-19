@@ -1,38 +1,118 @@
-.navbar-pawlett-wrapper {
+// .navbar-pawlett-wrapper {
+//   background-color: $dark-grey;
+//   width: 1440px;
+// }
+
+// .navbar-pawlett {
+//   background-color: $dark-grey;
+//   max-width: 1100px;
+//   text-transform: uppercase;
+//   font-weight: bold;
+
+//   a {
+
+//     &:hover {
+//     color: $flame-red;
+//     text-decoration: none;
+//   }
+//   }
+
+//   .navbar-pawlett-central-links {
+//     margin-top: 68px;
+//     margin-right: 50px;
+//   }
+
+//   .pawlett-navbar-button {
+
+//     background-color: $dark-grey;
+//     padding: 6px 12px;
+//     font-size: 1.8rem;
+//   }
+
+//   .pawlett-navbar-contact {
+//     margin-top: 68px;
+//     opacity: 0.6;
+//   }
+
+// }
+
+
+// @media(max-width: 1400px) {
+//   .navbar-pawlett-wrapper {
+//     width: 1200px;
+//   }
+// }
+
+.navbar {
+  min-height: 180px;
   background-color: $dark-grey;
-  width: 1440px;
-}
 
+  .navbar-brand {
+    margin-left: 20px;
+  }
 
-.navbar-pawlett {
-  background-color: $dark-grey;
-  max-width: 1100px;
-  text-transform: uppercase;
-  font-weight: bold;
+  .navbar-toggler {
+    border: 2px solid $flame-red;
+    border-radius: 10%
+  }
 
-  a {
+  #navbarSupportedContent {
+    margin-top: 70px;
+  }
+
+  .nav-link, form a {
+    margin-left: 8px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    color: $light-grey !important;
+    font-size: 1.7rem;
+    font-weight: 600;
 
     &:hover {
-    color: $flame-red;
+    color: $flame-red !important;
     text-decoration: none;
-  }
-  }
-
-  .navbar-pawlett-central-links {
-    margin-top: 68px;
-    margin-right: 50px;
+    }
   }
 
-  .pawlett-navbar-button {
-
-    background-color: $dark-grey;
-    padding: 6px 12px;
-    font-size: 1.8rem;
+  #secondtolast {
+    margin-right: 18px !important;
   }
 
-  .pawlett-navbar-login {
-    margin-top: 68px;
-    opacity: 0.6;
-  }
 
+  form a {
+    background-color: $flame-red;
+    padding: 10px 20px;
+    color: white !important;
+
+    &:hover {
+    color: $flame-red !important;
+    text-decoration: none;
+    background-color: white;
+    }
+  }
 }
+
+
+@media(max-width: 991px) {
+  #navbarSupportedContent {
+    margin-top: 0 !important;
+  }
+
+  .nav-link, form a {
+    font-size: 1.3rem !important;
+  }
+
+  #navcontact {
+    color: $flame-red !important;
+    background-color: $dark-grey;
+    padding: 0;
+
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+
+
+

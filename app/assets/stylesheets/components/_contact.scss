@@ -1,98 +1,98 @@
-.contact-group {
-  width: 1440px;
-  background-color: $lighter-grey;
-}
+// .contact-group {
+//   width: 1440px;
+//   background-color: $lighter-grey;
+// }
 
-.contact-group-header  {
-  width: 1100px;
-  background-color: $lighter-grey;
-}
-
-
-.contact-background {
-  background-image: image-url("van.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 566px;
-  width: 1440px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.contacts-row {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.filter {
-  background-color: rgba(0, 0, 0, .52);
-  height: 566px;
-}
+// .contact-group-header  {
+//   width: 1100px;
+//   background-color: $lighter-grey;
+// }
 
 
-.input-name, {
-  width: 250px;
-  color: rgb(166, 166, 166);
-  background-color: rgba(0, 0, 0, .51);
-  height: 40px;
-  padding: 20px;
-  border: 1px solid $lighter-grey;
-}
+// .contact-background {
+//   background-image: image-url("van.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   height: 566px;
+//   width: 1440px;
+//   margin-left: 0;
+//   margin-right: 0;
+// }
 
-.input-email {
-  width: 200px;
-  height: 40px;
-  color: rgb(166, 166, 166);
-  padding: 20px;
-  background-color: rgba(0, 0, 0, .51);
-  border: 1px solid $lighter-grey;
-}
+// .contacts-row {
+//   margin-top: 100px;
+//   margin-bottom: 100px;
+// }
 
-.input-message {
-  width: 673px;
-  height: 250px;
-  color: rgb(166, 166, 166);
-  background-color: rgba(0, 0, 0, .51);
-  border: none;
-  margin-left: 15px;
-  margin-top: 20px;
-}
+// .filter {
+//   background-color: rgba(0, 0, 0, .52);
+//   height: 566px;
+// }
 
-.message {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .51);
-  border: none;
-  border: 1px solid $lighter-grey;
-  padding-left: 20px;
-  color: rgb(166, 166, 166);
-}
 
-.contact-details {
-    background-color: rgba(0, 0, 0, .51);
-    color: $space-grey;
+// .input-name, {
+//   width: 250px;
+//   color: rgb(166, 166, 166);
+//   background-color: rgba(0, 0, 0, .51);
+//   height: 40px;
+//   padding: 20px;
+//   border: 1px solid $lighter-grey;
+// }
 
-    p {
-      font-size: 0.75rem;
-    }
+// .input-email {
+//   width: 200px;
+//   height: 40px;
+//   color: rgb(166, 166, 166);
+//   padding: 20px;
+//   background-color: rgba(0, 0, 0, .51);
+//   border: 1px solid $lighter-grey;
+// }
 
-}
+// .input-message {
+//   width: 673px;
+//   height: 250px;
+//   color: rgb(166, 166, 166);
+//   background-color: rgba(0, 0, 0, .51);
+//   border: none;
+//   margin-left: 15px;
+//   margin-top: 20px;
+// }
 
-.phone-numers, .address, .email {
-  p {
-    margin-bottom: 0;
-  }
-}
+// .message {
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, .51);
+//   border: none;
+//   border: 1px solid $lighter-grey;
+//   padding-left: 20px;
+//   color: rgb(166, 166, 166);
+// }
 
-.icon {
-    padding-top: 8px;
-  }
+// .contact-details {
+//     background-color: rgba(0, 0, 0, .51);
+//     color: $space-grey;
 
-.phone-numers {
-  margin-right: 10px;
-}
+//     p {
+//       font-size: 0.75rem;
+//     }
 
-.icons-group {
-  font-size: 1.3rem;
-}
+// }
+
+// .phone-numers, .address, .email {
+//   p {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .icon {
+//     padding-top: 8px;
+//   }
+
+// .phone-numers {
+//   margin-right: 10px;
+// }
+
+// .icons-group {
+//   font-size: 1.3rem;
+// }
 
