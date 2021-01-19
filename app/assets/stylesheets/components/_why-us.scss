@@ -1,0 +1,26 @@
+.why-us-cards {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.why-us-card {
+  border-radius: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 10px rgba(240, 240, 240, 1);
+  background-color: rgb(253, 253, 253);
+
+  h3 {
+    opacity: 0.7;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+}
+
