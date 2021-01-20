@@ -5,4 +5,8 @@ class PagesController < ApplicationController
     @services = Service.all
     @query = Query.new
   end
+
+  def covid
+  end
+
 end
