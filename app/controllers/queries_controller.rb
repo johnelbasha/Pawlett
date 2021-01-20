@@ -4,6 +4,7 @@ class QueriesController < ApplicationController
 
   def create
     @query = Query.new(query_params)
+    authorize @query
     if @query.save
       QueryMailer.creation_confirmation(@query).deliver_now
       QueryMailer.creation_notification(@query).deliver_now
