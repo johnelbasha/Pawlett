@@ -5,7 +5,7 @@ class Query < ApplicationRecord
                              message: "only allows letters from the alphabet a-z and spaces"
                              }
   validates :email, format: { with: /\S+@\S+/ }
-  validates :message, length: { minimum: 15,
+  validates :message, length: { minimum: 5,
                                  message: "Your message needs to be at least 15 characters long."
                               }
 
