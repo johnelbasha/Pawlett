@@ -1,4 +1,6 @@
 class QueriesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :create ]
+
 
   def create
     @query = Query.new(query_params)
