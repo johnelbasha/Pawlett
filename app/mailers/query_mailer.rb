@@ -12,7 +12,7 @@ class QueryMailer < ApplicationMailer
 
   def creation_notification(query)
     @query = query
-    mail to: "sales@gilfonce.com>", subject: "Your website has recieved a new query"
+    mail to: "enquiries@pawlettplumbing.co.uk>", subject: "You have recieved a new query"
   end
 
 
