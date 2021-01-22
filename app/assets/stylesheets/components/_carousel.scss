@@ -17,6 +17,7 @@
 
 .carousel-section {
   position: relative;
+  margin-top: 206px;
 
   img {
     width: 75%
@@ -99,7 +100,12 @@
   }
 }
 
+@media(max-width: 600px){
+  .carousel-section {
+    margin-top: 90px;
+  }
 
+}
 
 
 
