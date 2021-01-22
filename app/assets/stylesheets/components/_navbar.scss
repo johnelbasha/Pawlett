@@ -74,10 +74,9 @@
     }
   }
 
-  #secondtolast {
-    margin-right: 18px !important;
+  a#secondtolast.nav-link {
+    margin-right: 18px;
   }
-
 
   form a {
     background-color: $flame-red;
@@ -92,6 +91,32 @@
   }
 }
 
+img#gsr {
+  margin-top: 60px;
+}
+
+@media (max-width: 1089px) and (min-width: 991px) {
+
+  .navbar {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navbar-brand {
+    margin-left: 10px !important;
+    margin-right: 4px;
+  }
+
+  a.nav-link {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  a#secondtolast.nav-link {
+    margin-right: 9px;
+  }
+}
 
 @media(max-width: 991px) {
   #navbarSupportedContent {
@@ -112,6 +137,29 @@
     }
   }
 }
+
+@media(max-width: 600px){
+  .navbar {
+    min-height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 25px;
+
+  }
+
+  .navbar img {
+    width: 90px;
+  }
+
+  img#gsr {
+    width: 40px;
+    margin-top: 30px;
+  }
+}
+
+
+
+
 
 
 
