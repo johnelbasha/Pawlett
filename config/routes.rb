@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'render/index'
   devise_for :users
   root to: 'pages#home'
+  # root 'render#home'
   resources :services, only: [:index, :show]
   resources :orders, only: [:create, :show] do
     resources :payments, only: :new
