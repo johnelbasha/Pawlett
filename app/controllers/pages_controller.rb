@@ -9,4 +9,7 @@ class PagesController < ApplicationController
   def covid
   end
 
+  def reviews
+  end
+
 end
