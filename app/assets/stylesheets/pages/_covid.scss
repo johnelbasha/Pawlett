@@ -1,0 +1,41 @@
+.article {
+  color: #141414;
+
+  h1 {
+    text-align: center;
+    padding-top: 250px;
+    margin-bottom: 40px;
+ }
+
+  .headline {
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 100px;
+    background-color: $light-grey;
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  #lastp {
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 600px) {
+  .article h1 {
+    padding-top: 150px;
+      }
+  .article {
+    .headline {
+      padding: 20px 15px;
+      text-align: justify;
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
