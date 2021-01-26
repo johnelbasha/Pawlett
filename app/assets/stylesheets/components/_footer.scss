@@ -4,7 +4,6 @@
   color: $light-grey;
   font-size: 14px;
 
-
   li {
     margin-bottom: 20px;
   }
@@ -20,11 +19,15 @@
     margin-left: 300px;
   }
 
-    span, a {
-      font-weight: 700;
-      letter-spacing: -1px;
-      color: $light-grey;
-    }
+  span, a {
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: $light-grey;
+  }
+
+  img {
+    border-radius: 6px;
+  }
 
 //   width: 1440px;
 
