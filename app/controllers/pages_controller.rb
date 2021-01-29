@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :covid, :reviews ]
+  skip_before_action :authenticate_user!, only: [ :home, :covid, :reviews, :whatwedo, :contact ]
 
   def home
     @services = Service.all
