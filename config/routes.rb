@@ -16,5 +16,7 @@ Rails.application.routes.draw do
 
   get '/covid', to: 'pages#covid'
   get '/reviews', to: 'pages#reviews'
+  get '/whatwedo', to: 'pages#whatwedo'
+  get '/contact', to: 'pages#contact'
 
 end
