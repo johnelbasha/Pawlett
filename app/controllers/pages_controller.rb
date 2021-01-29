@@ -12,4 +12,9 @@ class PagesController < ApplicationController
   def reviews
   end
 
+  def whatwedo
+  end
+
+  def contact
+  end
 end
