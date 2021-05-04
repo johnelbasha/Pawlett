@@ -44,7 +44,7 @@
 // }
 
 .navbar {
-  min-height: 180px;
+  min-height: 140px;
   background-color: $dark-grey;
 
   .navbar-brand {
@@ -57,7 +57,7 @@
   }
 
   #navbarSupportedContent {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .nav-link, form a {
@@ -158,9 +158,18 @@ img#gsr {
   }
 }
 
+.contact-details {
+  background-color: #BCBDBE;
+  color: #58585a !important;
+  p {
+    font-size: 18px !important;
+  }
+  
+}
 
-
-
+#logo, #gsr-logo {
+  margin-top: -15px;
+}
 
 
 
