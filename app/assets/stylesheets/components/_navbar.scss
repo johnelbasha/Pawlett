@@ -124,6 +124,10 @@ img#gsr {
     margin-top: 0 !important;
   }
 
+  .carousel-section {
+    margin-top: 160px !important;
+  }
+
   .nav-link, form a {
     font-size: 1.3rem !important;
   }
@@ -136,16 +140,6 @@ img#gsr {
     &:hover {
       color: white !important;
     }
-  }
-}
-
-@media(max-width: 600px){
-  .navbar {
-    min-height: 90px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 25px;
-
   }
 
   .navbar img {
@@ -164,13 +158,38 @@ img#gsr {
   p {
     font-size: 18px !important;
   }
-  
 }
 
 #logo, #gsr-logo {
   margin-top: -15px;
 }
 
+@media(max-width: 600px){
+  .navbar {
+    min-height: 90px;
+    margin-top: 60px !important;
+    padding-bottom: 0;
+    padding-right: 25px;
+  }
+
+  .contact-details p {
+    font-size: 14px !important;
+    text-align: center !important;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .carousel-section {
+    margin-top: 150px !important;
+  }
+
+}
 
 
 
