@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-10 col-md-6">
-              <div class="contact-details px-3">
+              <div class="contact-details px-3 py-2">
                 <div class="telephone-group container d-flex justify-content-start mt-3">
                   <i class="fas fa-phone icon"></i>
                   <div class="phone-numers">
@@ -24,7 +24,7 @@
                   <i class="fas fa-map-marker-alt icon"></i>
                   <div class="address">
                     <p>1 The Beeches,</p>
-                    <p>Banchory Lodge,</p>
+                    <p>Banchory Lodge, <span id="contact-form-tag"></span></p>
                     <p>Banchory, AB31 5HS</p>
                   </div>
                 </div>
@@ -49,10 +49,11 @@
         <div class="container d-flex justify-content-center">
           <div class="row contacts-row">
             <div class="col-12">
+              <h3 class="text-center">Get In Touch</h3>
               <div class="contact-form" style="color: white;">
                 <%= simple_form_for(@query) do |f| %>
-                  <%= f.input :name, label: 'Full Name:', placeholder: "James Duncan" %>
-                  <%= f.input :email, label: 'e-mail address', placeholder: "jduncan@gmail.com" %>
+                  <%= f.input :name, label: 'Full Name:', placeholder: "Your name" %>
+                  <%= f.input :email, label: 'e-mail address', placeholder: "Your email" %>
                   <%= f.text_area :message, placeholder: "  Your message..."%>
                   <%= f.button :submit, 'Send', id: 'submitbutton' %>
                 <% end %>
