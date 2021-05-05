@@ -46,13 +46,10 @@
 
 }
 
-
 .service-cards {
   padding-left: 0;
   padding-right: 0;
 }
-
-
 
 .service-card {
 
@@ -62,13 +59,24 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 
-
   h3 {
     opacity: 0.7;
   }
 
   img {
     margin-bottom: 20px;
+    width: 167px;
   }
 
+.list-group-item {
+  background-color: #e2e1e1;
+  border: none;
+  font-style: italic;
+  }
+  
+}
+
+#bathrooms-description {
+  line-height: 28px;
+  text-align: justify;
 }
